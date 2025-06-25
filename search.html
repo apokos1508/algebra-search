@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba duckduckgo</title>
+</head>
+<body>
+    <h1>Ecosia search</h1>
+    <form action="https://www.ecosia.org/search" method="get">
+      <label for="search">Što pretražuješ?</label>
+        <input id="search" type="text" name="q">        
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+    <h1>duckduckgo search</h1>
+    <form action="https://duckduckgo.com/" method="get">
+      <label for="search">Što pretražuješ?</label>
+        <input id="search" type="text" name="q">         <!---ovo je osnova obrasca ova kockica prazna-->
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+    <h1>Instrument cable search</h1>
+    <form action="https://www.thomann.de/intl/instrument_cables.html" method="=get">
+        <div>
+            <label for="sort">Sort:</label>
+            <select name="oa" id="sort">
+                <option value="" disabled selected>Please choose...</option>
+                <option value="smb">Popularity</option>
+                <option value="pra">Price Low-High</option>
+                <option value="prd">Price High-Low</option>
+                <option value="rat">Best rated first</option>
+                <option value="rel">New product</option>
+                <option value="ala">A-Z</optin>
+                <option value="ald">Z-A</option> 
+            </select>
+        </div>
+        <div>
+            <label>Price (from-to):</label>
+            <input type="number" min="0" step="0.01" name="price-first">
+            <input type="number" max="1000" step="0.01" name="price-last">
+        </div>
+        <div>    
+            <button type="submit">Search</button>
+        </div>
+        <hr>
+        <div>
+            <h1>Lenght filter</h1>
+            <label>Lenght (from-to):</label>
+                <input type="number" min="0" step="0.01" name="feature-57478-first">
+                <input type="number" max="100" step="0.01" name="feature-57478-last">
+        </div>
+        <div>
+                <button type="submit">Search</button>
+        </div>
+        <hr>
+        <div>
+            <h1>Lenght filter</h1>
+            <label>Lenght (from-to):</label>
+                <input type="range" min="0" max="100" step="0.01" name="feature-57478-first">
+                <input type="range" min="0" max="100" step="0.01" name="feature-57478-last">
+        </div>
+        <div>
+                <button type="submit">Search</button>
+        </div>
+
+        
+            
+
+            
+    </form>
+
+
+    
+
+    
+</body>
+</html>
