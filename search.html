@@ -8,20 +8,20 @@
 <body>
     <h1>Ecosia search</h1>
     <form action="https://www.ecosia.org/search" method="get">
-      <label for="search">Što pretražuješ?</label>
-        <input id="search" type="text" name="q">        
+      <label for="search_ecosia">Što pretražuješ?</label>
+        <input id="search_ecosia" type="text" name="q">        
         <button type="submit">Search</button>
     </form>
     <hr>
     <h1>duckduckgo search</h1>
     <form action="https://duckduckgo.com/" method="get">
-      <label for="search">Što pretražuješ?</label>
-        <input id="search" type="text" name="q">         <!---ovo je osnova obrasca ova kockica prazna-->
+      <label for="search_duckduckgo">Što pretražuješ?</label>
+        <input id="search_duckduckgo" type="text" name="q">         <!---ovo je osnova obrasca ova kockica prazna-->
         <button type="submit">Search</button>
     </form>
     <hr>
     <h1>Instrument cable search</h1>
-    <form action="https://www.thomann.de/intl/instrument_cables.html" method="=get">
+    <form action="https://www.thomann.de/intl/instrument_cables.html" method="get">
         <div>
             <label for="sort">Sort:</label>
             <select name="oa" id="sort">
@@ -31,7 +31,7 @@
                 <option value="prd">Price High-Low</option>
                 <option value="rat">Best rated first</option>
                 <option value="rel">New product</option>
-                <option value="ala">A-Z</optin>
+                <option value="ala">A-Z</option>
                 <option value="ald">Z-A</option> 
             </select>
         </div>
@@ -53,6 +53,7 @@
         <div>
                 <button type="submit">Search</button>
         </div>
+    
         <hr>
         <div>
             <h1>Lenght filter</h1>
@@ -63,12 +64,67 @@
         <div>
                 <button type="submit">Search</button>
         </div>
+    </form>
+        <hr>
+        <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" method="get">
+            <!--Vježba: Filter za Price Range, Availability i Ratings-->
+            <div>
+                <p>Replacable cable:</p>
+                <label><input type="radio" value="yes" name="feature-50863">Yes</label>
+                <label><input type="radio" value="no" name="feature-50863">No</label>
+                <label><input type="radio" value="" name="feature-50863">All</label>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <hr>
+        <form action="https://www.thomann.de/intl/headphones_studio_headphones.html" method="get">
+            <div>
+                <h1>Price Range</h1>
+                <label>Price Range</label>
+                     <input type="number" min="0" step="0.1" name="price-first">
+                     <input type="number" max="1000" step="0.1" name="price-last">
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
+        
+        <hr>
+        <h1>Rating</h1>
+        <div>
+        <label><input type="checkbox" value="5" name="Rating []">5</label>
+        <label><input type="checkbox" value="4" name="Rating []">4</label>
+        <label><input type="checkbox" value="3" name="Rating []">3</label>
+        <label><input type="checkbox" value="2" name="Rating []">2</label>
+        <label><input type="checkbox" value="1" name="Rating []">1</label>
+        </div>
+ 
+                <p>Replacable cable:</p>
+                <label><input type="radio" value="true" name="feature-50863"> Yes</label>
+                <label><input type="radio" value="false" name="feature-50863"> No</label>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        
+
+
+
+        
+        
+        
+        
+
 
         
             
 
             
-    </form>
+    
 
 
     
